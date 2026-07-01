@@ -13,11 +13,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Millicent Amalachukwu Anadi |
+| **LinkedIn** | [millicent-amalachukwu-anadi]([https://www.linkedin.com/in/millicent-anadi-b7b93a175/] |
+| **Location** | Lagos, Nigeria |
+| **Background** | Cloud, DevOps & AI Agent |
+| **Goal** | To build secure, scalable, and automated cloud solutions |
 
 ---
 
