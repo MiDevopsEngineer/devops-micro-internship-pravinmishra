@@ -20,7 +20,7 @@ Create the `.claude/agents/` directory and add all required agent files.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/agents/` with all 3 files
 
-Add your screenshot here.
+![alt text](screenshots/21.png)
 
 ---
 
@@ -34,19 +34,25 @@ Analyze the configuration differences between the three agents and demonstrate u
 
 #### 1. Why does the cost optimizer use Haiku instead of Sonnet?
 
-Add your answer here...
+It is faster and least expensive.
 
 ---
 
 #### 2. Why does the security auditor NOT have Write in its tools list?
 
-Add your answer here...
+The security auditor typically doesn't have Write permissions by design. This follows the principle of least privilege: give an agent only the permissions it needs to do its job. A security auditor's primary responsibility is to inspect and report, not to modify code.
+
+If the security auditor could write files, it could:
+-Accidentally change application code.
+-Introduce new bugs while trying to "fix" issues.
+-Modify configuration in ways that break deployments.
+-Increase the risk if the agent itself behaves unexpectedly or is given a malicious prompt.
 
 ---
 
 #### 3. Why does the tf-writer use `inherit` instead of a specific model?
 
-Add your answer here...
+The tf-writer uses inherit so it doesn't hard-code a particular AI model. Instead, it inherits whatever model the parent workflow or orchestrator has already selected.
 
 ---
 
@@ -54,13 +60,13 @@ Add your answer here...
 
 #### Screenshot 2 — `security-auditor.md` frontmatter showing model and tools configuration
 
-Add your screenshot here.
+![alt text](screenshots/22.png)
 
 ---
 
 #### Screenshot 3 — `cost-optimizer.md` frontmatter showing the model and tools configuration
 
-Add your screenshot here.
+![alt text](screenshots/23.png)
 
 ---
 
@@ -74,13 +80,14 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — The delegation message showing Claude launched the security-auditor
 
-Add your screenshot here.
+![alt text](screenshots/24.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-Add your screenshot here.
+![alt text](screenshots/25a.png)
+![alt text](screenshots/25b.png)
 
 ---
 
@@ -94,7 +101,9 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — The full cost optimization report
 
-Add your screenshot here.
+![alt text](screenshots/26a.png)
+![alt text](screenshots/26b.png)
+![alt text](screenshots/26c.png)
 
 ---
 
