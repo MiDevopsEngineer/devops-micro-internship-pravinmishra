@@ -85,7 +85,7 @@ Paste your forked repository URL here:
 
 # Completion Checklist
 
-- [ ] Claude Code CLI installed successfully
+- [ x ] Claude Code CLI installed successfully
 - [ ] Claude Code authenticated successfully
 - [ ] Repository forked successfully
 - [ ] Repository cloned and opened in VS Code
