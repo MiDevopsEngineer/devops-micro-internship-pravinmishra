@@ -96,7 +96,7 @@ Verify MCP functionality by retrieving real-time data from your GitHub account u
 
 Paste your forked repository URL here:
 
-`__________________________`
+`https://github.com/MiDevopsEngineer/Ultimate-Agentic-DevOps-with-Claude-Code.git`
 
 ---
 
@@ -104,21 +104,21 @@ Paste your forked repository URL here:
 
 Confirm below:
 
-- [ ] `settings.local.json` is added to `.gitignore`
-- [ ] GitHub token is NOT exposed in repository or screenshots
+- [x] `settings.local.json` is added to `.gitignore`
+- [x] GitHub token is NOT exposed in repository or screenshots
 
 ---
 
 # Completion Checklist
 
-- [ ] GitHub PAT created with correct scopes (`repo`, `read:user`)
-- [ ] `.mcp.json` created at project root
-- [ ] `.claude/settings.local.json` contains token (hidden in screenshot)
-- [ ] `.claude/settings.local.json` is NOT committed
-- [ ] `/mcp` shows GitHub connection as active
-- [ ] Live GitHub query returns real repository data
-- [ ] All required screenshots added
-- [ ] GitHub repository URL included
+- [x] GitHub PAT created with correct scopes (`repo`, `read:user`)
+- [x] `.mcp.json` created at project root
+- [x] `.claude/settings.local.json` contains token (hidden in screenshot)
+- [x] `.claude/settings.local.json` is NOT committed
+- [x] `/mcp` shows GitHub connection as active
+- [x] Live GitHub query returns real repository data
+- [x] All required screenshots added
+- [x] GitHub repository URL included
 
 ---
 
