@@ -34,7 +34,7 @@ Teach Claude three specific facts about the project and instruct it to save them
 
 #### Screenshot 2 — Claude confirming the memory was saved
 
-![alt text](screenshots/46.png)
+![alt text](screenshots/51.png)
 
 ---
 
@@ -68,7 +68,7 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 #### Screenshot 5 — Claude recalling hero section colors
 
-![alt text](screenshots/47.png)
+![alt text](screenshots/52.png)
 
 ---
 
