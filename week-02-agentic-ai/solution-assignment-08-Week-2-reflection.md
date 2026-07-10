@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![alt text](screenshots/55.png)
 
 ---
 
@@ -54,7 +54,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`__________________________________________`
+`https://medium.com/@miandicloud/week-2-reflection-my-journey-with-agentic-ai-and-claude-code-8285a814f008`
 
 ---
 
