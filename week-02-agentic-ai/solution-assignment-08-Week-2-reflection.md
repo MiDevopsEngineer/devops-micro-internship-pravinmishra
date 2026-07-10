@@ -92,7 +92,7 @@ P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by 
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![alt text](screenshots/56.png)
 
 ---
 
@@ -101,14 +101,36 @@ Add your screenshot here.
 LinkedIn Post Content (copy-paste here):
 
 ```
-Paste your LinkedIn post content here
+𝐖𝐞𝐞𝐤 𝟐 𝐑𝐞𝐟𝐥𝐞𝐜𝐭𝐢𝐨𝐧 – 𝐌𝐲 𝐉𝐨𝐮𝐫𝐧𝐞𝐲 𝐰𝐢𝐭𝐡 𝐀𝐠𝐞𝐧𝐭𝐢𝐜 𝐀𝐈 𝐚𝐧𝐝 𝐂𝐥𝐚𝐮𝐝𝐞 𝐂𝐨𝐝𝐞
+
+This week completely changed how I think about AI in software engineering.
+
+Before this internship, I mainly saw AI as something that answered questions or generated code. After completing Week 2, I now understand that 𝐀𝐠𝐞𝐧𝐭𝐢𝐜 𝐀𝐈 𝐢𝐬 𝐚𝐛𝐨𝐮𝐭 𝐛𝐮𝐢𝐥𝐝𝐢𝐧𝐠 𝐬𝐲𝐬𝐭𝐞𝐦𝐬, 𝐰𝐨𝐫𝐤𝐟𝐥𝐨𝐰𝐬, 𝐚𝐧𝐝 𝐫𝐞𝐮𝐬𝐚𝐛𝐥𝐞 𝐩𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐬—𝐧𝐨𝐭 𝐣𝐮𝐬𝐭 𝐡𝐚𝐯𝐢𝐧𝐠 𝐜𝐨𝐧𝐯𝐞𝐫𝐬𝐚𝐭𝐢𝐨𝐧𝐬 𝐰𝐢𝐭𝐡 𝐀𝐈.
+
+Some of the concepts I explored this week include:
+✅ Creating and using 𝐂𝐋𝐀𝐔𝐃𝐄.𝐦𝐝 to guide AI behavior
+✅ Building reusable 𝐒𝐤𝐢𝐥𝐥𝐬 instead of repeating long prompts
+✅ Using 𝐒𝐮𝐛𝐚𝐠𝐞𝐧𝐭𝐬 to delegate specialized tasks
+✅ Understanding how 𝐌𝐂𝐏 extends Claude with external capabilities
+✅ Learning why 𝐇𝐨𝐨𝐤𝐬 𝐚𝐧𝐝 𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧𝐬 are essential for safe automation
+✅ Setting up 𝐌𝐞𝐦𝐨𝐫𝐲 so Claude remembers important project decisions across sessions.
+
+One of my favorite moments was seeing Claude recall the project rules I had intentionally saved after starting a completely new session. It correctly remembered the project's design decisions and applied them when answering my questions—without me repeating the context. It wasn't just that Claude could remember information, but that it remembered what was relevant and applied it appropriately. That made it feel less like chatting with an AI and more like collaborating with a teammate who understands the project's context and consistently follows its established standards.
+
+This week also taught me something about myself. I realized that I learn best by building and experimenting. Every error, failed command, and troubleshooting session helped me understand the tools much better than simply reading documentation.
+
+I'm excited to continue learning how Agentic AI can transform DevOps workflows and help engineers automate responsibly while maintaining control.
+
+P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community ( https://lnkd.in/eK_tAPyP ).
+#DMIByPravinMishra #AgenticAI #ClaudeCode #DevOps #LearningInPublic #CloudEngineering #AIAutomation
+
 ```
 
 ---
 
 ### LinkedIn Post Link:
 
-`__________________________________________`
+`https://www.linkedin.com/posts/millicent-anadi-b7b93a175_dmibypravinmishra-agenticai-claudecode-share-7481293060086218752-HGpT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E`
 
 ---
 
@@ -124,15 +146,15 @@ Paste your LinkedIn post content here
 
 # Completion Checklist
 
-* [ ] Blog written with required structure
-* [ ] Blog includes at least 2–3 Week 2 topics
-* [ ] Blog is publicly accessible
-* [ ] LinkedIn post created
-* [ ] Required P.S. line included
-* [ ] LinkedIn post content copied in submission field
-* [ ] Blog link added
-* [ ] LinkedIn post link added
-* [ ] Screenshots added to GitHub repo
+* [x] Blog written with required structure
+* [x] Blog includes at least 2–3 Week 2 topics
+* [x] Blog is publicly accessible
+* [x] LinkedIn post created
+* [x] Required P.S. line included
+* [x] LinkedIn post content copied in submission field
+* [x] Blog link added
+* [x] LinkedIn post link added
+* [x] Screenshots added to GitHub repo
 
 ---
 
