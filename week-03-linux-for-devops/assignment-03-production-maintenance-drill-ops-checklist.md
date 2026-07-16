@@ -60,7 +60,7 @@ Write your answer here.
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+No unexpected open ports were found. The only externally accessible TCP ports are 22 (SSH) and 80 (HTTP), which are required for remote administration and serving the React application through Nginx. Other ports, such as 53 (DNS), 68 (DHCP), and 323 (Chrony), are system services that are either bound to the local loopback interface or used internally by the operating system, so they are not exposed to external users.
 
 ---
 
@@ -96,13 +96,20 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
+If Nginx fails to restart in production, users may be unable to access the website because the web server is not running. This can result in downtime, failed HTTP requests, and a poor user experience. Administrators should check the Nginx configuration (sudo nginx -t), review the logs (sudo journalctl -u nginx or /var/log/nginx/error.log), fix any configuration errors, and then restart the service. Testing the configuration before restarting helps prevent outages.
 
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
+Basic Rollback Plan:
+
+1. Keep a backup of the previous application build and the Nginx configuration before deploying changes.
+2. If the deployment fails or the website becomes unavailable, restore the previous build files.
+3. Restore the previous Nginx configuration if it was modified.
+4. Test the Nginx configuration using sudo nginx -t.
+5. Restart Nginx using sudo systemctl restart nginx.
+6. Verify the website is accessible by opening it in a browser or using curl http://<server-ip>.
 
 ---
 
@@ -141,19 +148,21 @@ Answer the following in your own words:
 - If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
-Write your answer here.
+No, there were no errors in the logs during my check. The Nginx error log only contained a notice message:
+'2026/07/14 07:30:39 [notice] 26426#26426: using inherited sockets from "5;6;"'
+This is an informational message indicating that Nginx reused existing network sockets during a restart or reload. It is a normal part of Nginx's graceful restart process and does not indicate a problem.
 
 ---
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
+Since there were no recent error entries, it means Nginx was running normally and did not encounter any issues loading its configuration or handling requests during the time I checked the log. An empty or error-free log is generally a good sign that the web server is operating correctly, although it does not guarantee that every part of the application is free of issues.
 
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
+Yes. My curl requests were visible in the Nginx access logs. This proves that the HTTP requests successfully reached the Nginx web server, were processed by it, and were logged. It confirms that traffic is flowing correctly from the client (curl) to the server (Nginx), and that Nginx is serving the application as expected.
 
 ---
 
@@ -195,14 +204,13 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
+The disk is the most critical resource right now, although it is not under immediate pressure. The root filesystem (/dev/root) is 55% utilized (3.7 GB used out of 6.8 GB), which is higher than the current CPU and memory usage. The CPU load average is 0.00, indicating almost no processor activity, and memory usage is low, with only 389 MiB of 1.9 GiB in use and about 1.5 GiB available. Therefore, disk usage is the resource that should be monitored most closely, even though it still has about 3.1 GB of free space and is operating within a safe range.
 
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-Write your answer here.
-
+If the disk becomes 100% full on a production server, the server may no longer be able to write new files. Applications can fail to save data, log files cannot be updated, databases may stop working correctly, and users may experience errors or service outages. In severe cases, services such as Nginx may fail to start or restart because they cannot create temporary files or write logs. Monitoring disk usage and cleaning up unnecessary files before the disk is full helps prevent downtime.
 ---
 
 # Task 5 — Configuration & Deployment Verification
@@ -237,7 +245,7 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-Write your answer here.
+To confirm that the correct version of the application was deployed, I first checked the contents of the web root directory using ls -lah /var/www/html. The output confirmed that the React production build files, including index.html and the static folder, were present. I then verified that my custom change ("Deployed by <Millicent Amalachukwu Anadi>") was included in the deployed files by searching for the text in the web root using grep. Next, I confirmed that Nginx was serving the application from the correct web root (/var/www/html) by accessing the application through the server's public IP address. Finally, I opened the application in a web browser and verified that it loaded successfully and displayed the latest deployed version, confirming that Nginx was serving the correct application.
 
 ---
 
@@ -273,19 +281,19 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+The configuration failed because I accidentally removed the semicolon (;) at the end of the try_files directive. In Nginx, every directive must end with a semicolon, so removing it created a syntax error. When I ran sudo nginx -t, Nginx detected the error and reported that the configuration test had failed.
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+I reopened the Nginx configuration file, added the missing semicolon back to the try_files line, and saved the file. I then ran sudo nginx -t again to verify that the configuration was correct. After the test was successful, I restarted Nginx using sudo systemctl restart nginx.
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
+To avoid this type of issue in production, I would always test the Nginx configuration with sudo nginx -t before restarting the service. I would also review configuration changes carefully, use version control to track modifications, and make backups of working configurations so I can quickly restore them if needed.
 
 ---
 
@@ -315,19 +323,19 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+The application stopped working because the deployed web content directory (/var/www/html) was moved and replaced with an empty directory. Since Nginx serves files from this directory, it could not find the application's index.html and other static files, so it was unable to serve the website correctly.
 
 ---
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
+I removed the empty '/var/www/html' directory and restored the original website files from the backup directory (/var/www/html_backup). After restoring the files, I restarted the Nginx service so it could serve the application again. I then verified the recovery by sending an HTTP request with curl, which returned a successful response.
 
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
+To prevent this type of issue, I would keep regular backups of the deployed application, use version control and automated deployment tools, and test deployments in a staging environment before deploying to production. I would also monitor the application after each deployment and have a rollback plan so the previous working version can be restored quickly if a deployment fails.
 
 ---
 
@@ -343,31 +351,31 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+SSH key-based authentication is more secure because it uses a pair of cryptographic keys instead of a password. Private keys are much harder to guess or brute-force than passwords, and they are never transmitted over the network during authentication. This reduces the risk of unauthorized access and password theft.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Only the ports required by the application should be open because every open port increases the server's attack surface. Closing unnecessary ports reduces the chances of unauthorized access and helps protect the server from network-based attacks. For example, only ports 22 (SSH), 80 (HTTP), and 443 (HTTPS) should be open if they are needed.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+Enabling Nginx on boot ensures that the web server starts automatically whenever the server is restarted. This improves reliability because the website becomes available without requiring manual intervention after a reboot or system update.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Sharing secrets, SSH keys, API keys, passwords, or other credentials publicly can allow unauthorized users to access servers, cloud resources, or sensitive data. This can lead to data breaches, financial loss, service disruption, or the compromise of an entire system. Sensitive credentials should always be stored securely and never committed to public repositories.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+Cloud resources should be stopped or terminated when they are no longer needed to avoid unnecessary costs and reduce security risks. Unused resources can still be targeted by attackers if they remain online. Cleaning up unused instances, storage, and other services helps save money, improve security, and keep the cloud environment organized.
 
 ---
 
