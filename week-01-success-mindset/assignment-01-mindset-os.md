@@ -141,7 +141,7 @@ Add your answer here...
 
 Paste your link here:
 
-`__________________________`
+`Add your URL here`
 
 ---
 
@@ -338,7 +338,7 @@ Add your answer here...
 
 Paste your LinkedIn post link here:
 
-`__________________________`
+`Add your URL here`
 
 ---
 
