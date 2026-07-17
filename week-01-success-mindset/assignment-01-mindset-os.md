@@ -155,11 +155,7 @@ People recognized me not only for my technical competence but also for my consis
 
 Paste your link here:
 
-<<<<<<< HEAD:week-01-success-mindset/README.md
-`https://medium.com/@miandicloud/my-2-0-version-e2c974a8bdc7`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-01-success-mindset/assignment-01-mindset-os.md
+https://medium.com/@miandicloud/my-2-0-version-e2c974a8bdc7
 
 ---
 
@@ -390,11 +386,7 @@ Every weekday from 6:00 AM to 7:30 AM, I will complete one uninterrupted deep wo
 
 Paste your LinkedIn post link here:
 
-<<<<<<< HEAD:week-01-success-mindset/README.md
-`https://www.linkedin.com/posts/millicent-anadi-b7b93a175_devops-cloudcomputing-cloudsecurity-share-7478034625257353216-HUst/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-01-success-mindset/assignment-01-mindset-os.md
+https://www.linkedin.com/posts/millicent-anadi-b7b93a175_devops-cloudcomputing-cloudsecurity-share-7478034625257353216-HUst/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E
 
 ---
 
