@@ -54,11 +54,7 @@ You can publish your blog on:
 
 Blog Link:
 
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-08-Week-2-reflection.md
-`https://medium.com/@miandicloud/week-2-reflection-my-journey-with-agentic-ai-and-claude-code-8285a814f008`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-08-week-2-reflection.md
+https://medium.com/@miandicloud/week-2-reflection-my-journey-with-agentic-ai-and-claude-code-8285a814f008
 
 ---
 
@@ -134,11 +130,7 @@ P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by 
 
 ### LinkedIn Post Link:
 
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-08-Week-2-reflection.md
-`https://www.linkedin.com/posts/millicent-anadi-b7b93a175_dmibypravinmishra-agenticai-claudecode-share-7481293060086218752-HGpT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-08-week-2-reflection.md
+https://www.linkedin.com/posts/millicent-anadi-b7b93a175_dmibypravinmishra-agenticai-claudecode-share-7481293060086218752-HGpT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E
 
 ---
 
