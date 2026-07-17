@@ -100,11 +100,7 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 Paste your forked repository URL here:
 
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-02-claude-md.md
 `https://github.com/MiDevopsEngineer/Ultimate-Agentic-DevOps-with-Claude-Code.git`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-02-claude-md.md
 
 ---
 
