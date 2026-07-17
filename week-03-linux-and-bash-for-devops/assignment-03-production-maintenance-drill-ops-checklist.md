@@ -390,13 +390,13 @@ Cloud resources should be stopped or terminated when they are no longer needed t
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[https://www.linkedin.com/posts/millicent-anadi-b7b93a175_devops-aws-ec2-share-7483917312517931008-OWa1/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E]
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/51.png)
 
 ---
 
