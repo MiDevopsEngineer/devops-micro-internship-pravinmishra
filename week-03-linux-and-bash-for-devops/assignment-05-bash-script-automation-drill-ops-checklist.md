@@ -36,19 +36,23 @@ Answer the following in your own words:
 
 **1. What is Bash?**
 
-Add your answer here.
+Bash (Bourne Again SHell) is a command-line shell and scripting language commonly used on Linux and Unix-based operating systems. It allows users to interact with the operating system by executing commands, automating repetitive tasks through scripts, managing files and directories, and administering system resources. Bash is widely used by DevOps engineers and system administrators to automate workflows, manage servers, and perform operational tasks efficiently.
 
 ---
 
 **2. What is the difference between shell and Bash?**
 
-Add your answer here.
+A shell is a general program that provides a command-line interface for interacting with an operating system. It accepts user commands and communicates with the operating system to execute them. There are several types of shells, such as Bash, Zsh, Fish, and KornShell.
+
+Bash (Bourne Again SHell) is one specific type of shell. It is the default shell on many Linux systems and includes features for command execution, scripting, automation, and system administration.
+
+In simple terms: A shell is the category, while Bash is one of the most widely used shells within that category.
 
 ---
 
 **3. Why is it important to confirm the Bash version before writing scripts?**
 
-Add your answer here.
+It is important to confirm the Bash version before writing scripts because different versions of Bash support different features and syntax. A script that works on a newer version may fail on an older one if it uses unsupported commands or functionality. Verifying the Bash version helps ensure compatibility, reduces the risk of errors, and makes scripts more reliable across different Linux systems.
 
 ---
 
@@ -84,19 +88,21 @@ Answer the following in your own words:
 
 **1. What is the purpose of `#!/bin/bash`?**
 
-Add your answer here.
+The '#!/bin/bash line', known as the shebang, tells the operating system which interpreter should execute the script. When a script starts with #!/bin/bash, it instructs the system to run the script using the Bash shell. This ensures the script executes with the correct interpreter, improving compatibility and preventing errors that could occur if a different shell is used.
 
 ---
 
 **2. Why do we use `chmod +x` before running a script?**
 
-Add your answer here.
+We use 'chmod +x' to give a script execute permission, allowing it to be run as a program. Without this permission, the operating system will not execute the script directly, even if it contains valid Bash commands. After making the script executable with 'chmod +x', it can be run using './script_name.sh.'
 
 ---
 
 **3. What is the difference between running a script using `./script.sh` and `bash script.sh`?**
 
-Add your answer here.
+Running a script with ./script.sh executes the script directly as a program. For this to work, the script must have execute permission (using 'chmod +x') and should include a shebang line such as '#!/bin/bash' to specify the interpreter.
+
+Running a script with 'bash script.sh' explicitly tells Bash to execute the script. This method does not require the script to have execute permission, because the Bash interpreter is invoked directly. Both methods run the script, but './script.sh' relies on execute permissions and the shebang, while 'bash script.sh' runs the script using Bash regardless of its executable status.
 
 ---
 
@@ -168,25 +174,25 @@ Answer the following in your own words:
 
 **1. What is an array in Bash?**
 
-Add your answer here.
+An array in Bash is a variable that can store multiple values under a single name. Each value is stored at a specific index, starting from 0, allowing you to organize and access related data efficiently. Arrays are useful for managing lists of items, looping through values, and simplifying scripts that work with multiple pieces of data.
 
 ---
 
 **2. Why are arrays useful in scripts?**
 
-Add your answer here.
+Arrays are useful in Bash scripts because they allow you to store and manage multiple related values in a single variable. This makes scripts more organized, reduces repetition, and makes it easier to loop through lists of items, process data, and automate repetitive tasks efficiently.
 
 ---
 
 **3. What does `"${tools[@]}"` mean?**
 
-Add your answer here.
+'${tools[@]}' represents all the elements in the tools array. When used in a loop or command, it expands to each item in the array individually, allowing you to process or display every value stored in the array.
 
 ---
 
 **4. What is the purpose of the `for` loop in this script?**
 
-Add your answer here.
+The 'for' loop is used to iterate through each element in the array and execute the same set of commands for every item. It automates repetitive tasks by processing each value one at a time, making the script more efficient and easier to maintain.
 
 ---
 
