@@ -20,13 +20,13 @@ Verify that Bash is available on your system and create a clean workspace for th
 
 #### Screenshot 1 — Output of `echo $SHELL` and `bash --version`
 
-Add your screenshot here.
+![alt text](screenshots/53.png)
 
 ---
 
 #### Screenshot 2 — Output of `pwd` and `ls -lah` showing the scripts directory
 
-Add your screenshot here.
+![alt text](screenshots/54.png)
 
 ---
 
@@ -66,19 +66,19 @@ Create your first Bash script, make it executable, and run it from the terminal.
 
 #### Screenshot 1 — Content of `first-script.sh`
 
-Add your screenshot here.
+![alt text](screenshots/55.png)
 
 ---
 
 #### Screenshot 2 — Output of `./first-script.sh`
 
-Add your screenshot here.
+![alt text](screenshots/57.png)
 
 ---
 
 #### Screenshot 3 — Output of `ls -l first-script.sh` showing executable permission
 
-Add your screenshot here.
+![alt text](screenshots/58.png)
 
 ---
 
@@ -116,13 +116,13 @@ Use variables to store and display user-related information.
 
 #### Screenshot 1 — Content of `user-info.sh`
 
-Add your screenshot here.
+![alt text](screenshots/59.png)
 
 ---
 
 #### Screenshot 2 — Output of `./user-info.sh`
 
-Add your screenshot here.
+![alt text](screenshots/60.png)
 
 ---
 
@@ -132,20 +132,18 @@ Answer the following in your own words:
 
 **1. What is a variable in Bash?**
 
-Add your answer here.
+A variable in Bash is a named container used to store data, such as text, numbers, or command output. Variables make scripts more flexible by allowing values to be reused, updated, and referenced throughout the script without repeating the same information.
 
 ---
 
 **2. Why should we avoid spaces around the `=` sign when creating variables?**
 
-Add your answer here.
-
+Spaces should be avoided around the '=' sign when creating variables because Bash treats spaces as separators between commands and arguments. If spaces are added, Bash will not recognize the variable assignment correctly and will produce an error. For example, 'name=John' is correct, while name '= John' is invalid.
 ---
 
 **3. How do you access the value stored inside a Bash variable?**
 
-Add your answer here.
-
+To access the value stored in a Bash variable, prefix the variable name with a dollar sign ('$'). For example, if a variable is defined as 'name="Millicent"', you can display its value using 'echo $name', which outputs Millicent.
 ---
 
 # Task 4 — Arrays & Loops: Tools Checklist Script
@@ -158,14 +156,12 @@ Use arrays and loops to print a checklist of tools used in Bash scripting.
 
 #### Screenshot 1 — Content of `tools-checklist.sh`
 
-Add your screenshot here.
-
+![alt text](screenshots/61.png)
 ---
 
 #### Screenshot 2 — Output of `./tools-checklist.sh`
 
-Add your screenshot here.
-
+![alt text](screenshots/62.png)
 ---
 
 ### Notes
@@ -206,14 +202,12 @@ Use loops to repeat a task multiple times.
 
 #### Screenshot 1 — Content of `counter.sh`
 
-Add your screenshot here.
-
+![alt text](screenshots/63.png)
 ---
 
 #### Screenshot 2 — Output of `./counter.sh`
 
-Add your screenshot here.
-
+![alt text](screenshots/64.png)
 ---
 
 ### Notes
@@ -222,25 +216,25 @@ Answer the following in your own words:
 
 **1. What is a loop?**
 
-Add your answer here.
+A loop is a programming construct that repeatedly executes a block of code until a specified condition is met or for a set number of times. In Bash, loops are commonly used to automate repetitive tasks, process lists of items, and make scripts more efficient.
 
 ---
 
 **2. Why do we use loops in Bash scripting?**
 
-Add your answer here.
+Loops are used in Bash scripting to automate repetitive tasks by executing the same set of commands multiple times. They reduce code duplication, make scripts more efficient, and simplify processing lists of items, files, or numbers.
 
 ---
 
 **3. How many times did the loop run in your script?**
 
-Add your answer here.
+The loop ran 5 times because it iterated through the values 1, 2, 3, 4, and 5. During each iteration, it printed a message indicating that the current step had been completed.
 
 ---
 
 **4. What would you change if you wanted the loop to run 10 times?**
 
-Add your answer here.
+To make the loop run 10 times, I would update the list of numbers to include 1 through 10. For example: 'for number in 1 2 3 4 5 6 7 8 9 10'  This change makes the loop execute 10 times, printing the message once for each number.
 
 ---
 
@@ -260,13 +254,13 @@ Add your screenshot here.
 
 #### Screenshot 2 — Content of `file-check.sh`
 
-Add your screenshot here.
+![alt text](screenshots/65.png)
 
 ---
 
 #### Screenshot 3 — Output of `./file-check.sh`
 
-Add your screenshot here.
+![alt text](screenshots/67.png)
 
 ---
 
