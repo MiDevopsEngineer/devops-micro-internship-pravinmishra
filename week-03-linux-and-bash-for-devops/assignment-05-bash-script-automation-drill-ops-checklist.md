@@ -248,7 +248,7 @@ Use file checks and conditionals to verify whether files and directories exist.
 
 #### Screenshot 1 — Output of `ls -lah ../test-folder`
 
-Add your screenshot here.
+![alt text](screenshots/75.png)
 
 ---
 
@@ -270,25 +270,25 @@ Answer the following in your own words:
 
 **1. What does `-d` check in Bash?**
 
-Add your answer here.
+In Bash, the '-d' checks whether a path exists and is a directory.
 
 ---
 
 **2. What does `-f` check in Bash?**
 
-Add your answer here.
+'-f' checks whether a specified path exists and is a regular file (not a directory).
 
 ---
 
 **3. Why should file and directory paths be stored in variables?**
 
-Add your answer here.
+File and directory paths should be stored in variables because it makes scripts easier to read, update, and reuse. If the path changes, you only need to update the variable instead of changing it in multiple places.
 
 ---
 
 **4. What happens if the file does not exist?**
 
-Add your answer here.
+If the file does not exist, the '-f' test returns false, and the commands inside the else block (if provided) are executed. This helps prevent errors by allowing the script to handle missing files appropriately.
 
 ---
 
@@ -302,25 +302,25 @@ Use if-else conditionals to make decisions based on a variable value.
 
 #### Screenshot 1 — Content of `score-check.sh` with `score=85`
 
-Add your screenshot here.
+![alt text](screenshots/68.png)
 
 ---
 
 #### Screenshot 2 — Output showing `Result: Pass`
 
-Add your screenshot here.
+![alt text](screenshots/69.png)
 
 ---
 
 #### Screenshot 3 — Content of `score-check.sh` with `score=55`
 
-Add your screenshot here.
+![alt text](screenshots/70.png)
 
 ---
 
 #### Screenshot 4 — Output showing `Result: Retry`
 
-Add your screenshot here.
+![alt text](screenshots/71.png)
 
 ---
 
@@ -330,25 +330,25 @@ Answer the following in your own words:
 
 **1. What is the purpose of if-else in Bash?**
 
-Add your answer here.
+The purpose of an 'if-else' statement in Bash is to make decisions based on a condition. It allows the script to run one set of commands if the condition is true, and a different set of commands if the condition is false.
 
 ---
 
 **2. What does `-ge` mean?**
 
-Add your answer here.
+'-ge' means "greater than or equal to." It is used to compare two integer values in Bash and returns true if the first number is greater than or equal to the second number.
 
 ---
 
 **3. Why should conditions be tested with different values?**
 
-Add your answer here.
+Conditions should be tested with different values to make sure the script works correctly in all situations. This helps verify that both the 'if' and 'else' branches behave as expected and helps identify any errors or unexpected behavior.
 
 ---
 
 **4. How can conditionals help in automation scripts?**
 
-Add your answer here.
+Conditionals help in automation scripts by allowing the script to make decisions based on different conditions. This enables the script to perform different actions automatically, such as checking if a file exists, verifying user input, or handling errors without requiring manual intervention.
 
 ---
 
@@ -362,19 +362,19 @@ Create a final Bash script using functions to organize reusable code.
 
 #### Screenshot 1 — Content of `final-automation.sh`
 
-Add your screenshot here.
+![alt text](screenshots/72.png)
 
 ---
 
 #### Screenshot 2 — Output of `./final-automation.sh`
 
-Add your screenshot here.
+![alt text](screenshots/73.png)
 
 ---
 
 #### Screenshot 3 — Output of `ls -lah` showing all created scripts
 
-Add your screenshot here.
+![alt text](screenshots/74.png)
 
 ---
 
@@ -384,25 +384,25 @@ Answer the following in your own words:
 
 **1. What is a function in Bash?**
 
-Add your answer here.
+A function in Bash is a reusable block of code that performs a specific task. It helps organize scripts, reduces repetition, and makes the code easier to read and maintain.
 
 ---
 
 **2. Why are functions useful in scripts?**
 
-Add your answer here.
+Functions are useful in scripts because they let you reuse the same code multiple times without rewriting it. This makes scripts shorter, easier to read, easier to maintain, and simpler to update or debug.
 
 ---
 
 **3. Which functions did you create in this script?**
 
-Add your answer here.
+I created four functions in my script: 'print_header()', 'print_user_details()', 'check_files()', and 'print_tools()'. Each function performs a specific task, making the script more organized and easier to maintain.
 
 ---
 
 **4. How does this final script combine variables, arrays, loops, conditionals, files, and functions?**
 
-Add your answer here.
+The final script combines variables to store information, arrays to keep a list of tools, loops to go through each tool, conditionals to check whether files and directories exist, file handling to work with files, and functions to organize the code into reusable sections. Together, these features make the script more structured, efficient, and easier to maintain.
 
 ---
 
