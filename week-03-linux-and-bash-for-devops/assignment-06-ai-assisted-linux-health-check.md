@@ -36,13 +36,14 @@ Answer the following in your own words:
 
 **1. What proves that Nginx is running?**
 
-Add your answer here.
+When I run systemctl is-active nginx, it returns active. This confirms that Nginx is running.
 
 ---
 
 **2. What proves that the server is listening for HTTP traffic?**
 
-Add your answer here.
+The output of ss -ltn | grep ':80' shows that port 80 is listening. This means the server is ready to receive HTTP requests.
+
 
 ---
 
