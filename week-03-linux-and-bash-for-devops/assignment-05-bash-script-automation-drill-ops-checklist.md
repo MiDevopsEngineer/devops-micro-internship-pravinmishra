@@ -414,13 +414,13 @@ The final script combines variables to store information, arrays to keep a list 
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/millicent-anadi-b7b93a175_linux-bash-shellscripting-ugcPost-7486349085327785984-_rbj/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/96.png)
 
 ---
 
