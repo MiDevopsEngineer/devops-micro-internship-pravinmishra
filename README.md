@@ -131,17 +131,10 @@ Week 04 → Git & GitHub
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | — | — |
-<<<<<<< HEAD
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | - | - |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | - | - |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Completed | - | - |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | — | — |
-=======
-| 01 | Success Mindset | ✅ Completed | ✅ Solved | ✅ Solved | ✅ Solved |
-| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | ✅ Solved | ✅ Solved |
-| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | ✅ Solved | ✅ Solved |
-| 04 | Git & GitHub | ✅ Completed | ✅ Solved | ✅ Completed | ✅ Completed |
->>>>>>> 31e6a2f322971f745cbf4ab8859c72bf8634b975
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
