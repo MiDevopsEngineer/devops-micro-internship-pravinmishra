@@ -514,13 +514,13 @@ The recovery command was not executed automatically by the AI. Instead, it was r
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/millicent-anadi-b7b93a175_dmibypravinmishra-devops-git-ugcPost-7486731464613494784-vPTO/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/98.png)
 
 ---
 
