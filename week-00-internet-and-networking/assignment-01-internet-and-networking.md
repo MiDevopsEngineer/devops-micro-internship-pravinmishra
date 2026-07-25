@@ -25,7 +25,7 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![alt text](screenshots/1.png)
 
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
@@ -34,7 +34,9 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+**What I Learned:**
+
+I learned that a **network protocol** is a set of rules that allows devices to communicate and exchange data correctly. I also understood that protocols are like the rules people follow in a conversation, ensuring communication is clear, organized, and successful.
 
 ---
 
@@ -59,7 +61,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When a user visits the **EpicReads** website, their browser sends a request using **HTTP** or the more secure **HTTPS** protocol. The request is broken into smaller pieces called **packets** through **packet switching**, allowing the data to travel efficiently across different network paths. Each packet contains the **IP address** of the user's device and the server hosting EpicReads in Finland, ensuring it reaches the correct destination. The **TCP/IP** protocol suite manages the communication by routing the packets, checking for errors, and reassembling them in the correct order when they arrive. This process happens within seconds, allowing readers from anywhere in the world to access EpicReads quickly, securely, and reliably.
 
 ---
 
@@ -91,7 +93,7 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![alt text](screenshots/2.png)
 
 
 Replace `task-3-diagram.png` with your actual diagram file name.
@@ -102,18 +104,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* HTML, CSS, JavaScript
+* React.js
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node.js
+* Express.js
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MySQL
+* PostgreSQL
 
 ---
 
@@ -142,7 +144,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+The Domain Name System (DNS) is like the internet's phonebook. It translates a domain name, such as epicreads.com, into an IP address that computers use to locate the website. To connect epicreads.com to the server at 52.172.142.222, an A (Address) record should be used because it maps a domain name directly to an IPv4 address. This allows users to access the website using the easy-to-remember domain name instead of typing the server's IP address.
 
 ---
 
@@ -178,7 +180,7 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![alt text](screenshots/3.png)
 
 
 Replace `task-5-vscode.png` with your actual screenshot file name.
@@ -217,8 +219,8 @@ Add the following credit note at the end of your post:
 
 Paste your LinkedIn post URL here:
 
-```text
-Add your URL here...
+https://www.linkedin.com/posts/millicent-anadi-b7b93a175_devops-agenticai-cloudengineering-activity-7440652283496984576-8Btx?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E
+
 ```
 
 ---
@@ -227,7 +229,34 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+🚀 DevOps Micro-Internship with Agentic AI – Key Highlights
+
+As part of my ongoing DevOps micro-internship leveraging Agentic AI, I’ve been reinforcing core concepts across networking, architecture, and development workflows.
+
+1️⃣ ChatGPT 
+Integrating AI tools into my workflow to streamline problem-solving, accelerate debugging, and simulate real-world DevOps scenarios.
+
+2️⃣ Internet & Networking
+Revisited how protocols enable structured communication between systems, with TCP/IP and HTTP forming the backbone of reliable data exchange across networks.
+
+3️⃣ Application Architecture
+Worked with both:
+
+Two-tier architecture (Frontend + Database)
+Three-tier architecture (Frontend + Backend + Database)
+Highlighting the importance of separation of concerns for scalability, security, and maintainability.
+
+4️⃣ DNS (Domain Name System)
+Explored domain-to-IP resolution and practical configuration using A records to map domains (e.g., epicreads.com) to server endpoints.
+
+5️⃣ VS Code Setup
+Utilized the integrated terminal for environment navigation and command-line operations (pwd, ls), a fundamental part of efficient DevOps workflows.
+
+💡 Continuously refining practical skills while integrating AI-driven efficiency into everyday engineering tasks.
+
+P.S. This post is part of the DevOps Micro Internship Cohort run by Pravin Mishra. You can start your DevOps journey for free from his YouTube Playlist. https://lnkd.in/ekhSzKH3
+
+#DevOps hashtag#AgenticAI hashtag#CloudEngineering hashtag#Networking hashtag#TechGrowth
 
 ---
 
@@ -235,19 +264,25 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+**What did you find easy?**
+
+I found it easy to understand the basic networking concepts, such as protocols, packet switching, IP addresses, and DNS. I also found it straightforward to identify the different layers in two-tier and three-tier application architectures and the technologies commonly used in each layer.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+**What was difficult?**
+
+Understanding how all the networking concepts work together in real-world applications was the most challenging part. It also took some time to understand how DNS, TCP/IP, HTTP/HTTPS, and packet switching interact to allow users to access a website from anywhere in the world.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+**What will you improve next week?**
+
+Next week, I will improve my understanding of networking concepts by practicing more hands-on exercises. I also plan to strengthen my knowledge of application architectures, DNS, and web communication protocols so I can apply these concepts more confidently in real-world projects.
 
 ---
 

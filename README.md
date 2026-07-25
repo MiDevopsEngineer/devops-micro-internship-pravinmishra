@@ -130,7 +130,7 @@ Week 04 → Git & GitHub
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/millicent-anadi-b7b93a175_devops-agenticai-cloudengineering-activity-7440652283496984576-8Btx?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E | — |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/millicent-anadi-b7b93a175_devops-cloudcomputing-cloudsecurity-activity-7478034628390494208-W2ix?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E | https://medium.com/@miandicloud/week-2-reflection-my-journey-with-agentic-ai-and-claude-code-8285a814f008?sharedUserId=miandicloud |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/millicent-anadi-b7b93a175_1a1a2e-16213e-dmibypravinmishra-activity-7481284790990737409-iyFp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E | — |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/millicent-anadi-b7b93a175_linux-bash-shellscripting-activity-7486349086955282432-NV1q?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E | — |
