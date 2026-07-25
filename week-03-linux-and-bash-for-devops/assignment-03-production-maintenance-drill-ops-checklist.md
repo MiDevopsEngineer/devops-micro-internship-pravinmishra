@@ -25,14 +25,14 @@ Verify that the deployed React application is reachable from the browser and con
 ---
 
 #### Screenshot 2 — Output of `ip a`
+
 ![alt text](screenshots/40.png)
-Add your screenshot here.
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
+
 ![alt text](screenshots/18.png)
-Add your screenshot here.
 
 ---
 
@@ -49,6 +49,7 @@ Answer the following in your own words:
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
 Nginx is proven to be listening on 0.0.0.0:80 because the ss command showed Nginx listening on port 80 on all IPv4 network interfaces.
+
 ![alt text](screenshots/20.png)
 
 ---
@@ -56,6 +57,7 @@ Nginx is proven to be listening on 0.0.0.0:80 because the ss command showed Ngin
 **2. What proves SSH is active on port 22?**
 
 SSH is proven to be active on port 22 because the ss command showed the SSH daemon (sshd) listening on port 22.
+
 ![alt text](screenshots/22.png)
 
 ---
@@ -77,6 +79,7 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
 ![alt text](screenshots/23.png)
+
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
@@ -178,8 +181,8 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-Add your screenshot here.
 ![alt text](screenshots/29.png)
+
 ---
 
 #### Screenshot 2 — Output of `free -h`
@@ -332,7 +335,7 @@ The application stopped working because the deployed web content directory (/var
 
 **2. How did you fix the issue and restore the application?**
 
-I removed the empty '/var/www/html' directory and restored the original website files from the backup directory (/var/www/html_backup). After restoring the files, I restarted the Nginx service so it could serve the application again. I then verified the recovery by sending an HTTP request with curl, which returned a successful response.
+I removed the empty `/var/www/html` directory and restored the original website files from the backup directory (`/var/www/html_backup`). After restoring the files, I restarted the Nginx service so it could serve the application again. I then verified the recovery by sending an HTTP request with curl, which returned a successful response.
 
 ---
 
@@ -390,7 +393,7 @@ Cloud resources should be stopped or terminated when they are no longer needed t
 
 Paste your LinkedIn post URL here:
 
-[https://www.linkedin.com/posts/millicent-anadi-b7b93a175_devops-aws-ec2-share-7483917312517931008-OWa1/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E]
+https://www.linkedin.com/posts/millicent-anadi-b7b93a175_devops-aws-ec2-share-7483917312517931008-OWa1/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E
 
 ---
 
