@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+![alt text](screenshots/67.png)
 
 ---
 
@@ -34,13 +34,23 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+Europe (Stockholm) — eu-north-1
 
 ---
 
 **Services:**
 
-Write your answer here.
+Networking: Amazon VPC, subnets (public and private), route tables, Internet Gateway, Network ACLs.
+
+Compute: Amazon EC2 instances running the Web Tier (Nginx) and App Tier.
+
+Load Balancing: Elastic Load Balancing — Application Load Balancer (Public ALB and Internal ALB).
+
+Security: AWS Security Groups and IAM.
+
+Database: Amazon RDS for MySQL, configured for Multi-AZ high availability with a read replica.
+
+Monitoring: Amazon CloudWatch for instance and application monitoring.
 
 ---
 
@@ -56,7 +66,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+`http://Book-Review-Web-ALB-1116703439.eu-north-1.elb.amazonaws.com`
 
 ---
 
@@ -70,37 +80,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
+![alt text](screenshots/68.png)
 
 ---
 
 #### App EC2
 
-Add your screenshot here.
+![alt text](screenshots/69.png)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
+![alt text](screenshots/70.png)
 
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
+![alt text](screenshots/71.png)
 
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
+![alt text](screenshots/72.png)
 
 ---
 
 #### App UI proof
 
-Add your screenshot here.
+![alt text](screenshots/66.png)
 
 ---
 
@@ -114,19 +124,35 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+Successfully deployed a three-tier AWS Book Review application architecture in the eu-north-1 (Europe–Stockholm) region. The deployment included a custom VPC (10.0.0.0/16), six subnets across two Availability Zones, a public Application Load Balancer, Web Tier EC2 instances running Nginx, an internal Application Load Balancer, private App Tier EC2 instances, and an Amazon RDS MySQL database with Multi-AZ configuration and a read replica. The Web Server and App Server communication was configured through the load balancers, with database access restricted to the application tier.
 
 ---
 
 **Issues + fixes:**
 
-Write your answer here.
+SSH connection timeout: Investigated EC2 security groups, public IP addressing, and network connectivity. Port 22 was reachable during one test, but subsequent SSH attempts and EC2 Instance Connect failed. The issue remained unresolved at the last check.
+
+Application returning HTTP 503: The internal ALB returned 503 because the application target was unhealthy. Identified that the Node.js application was attempting to listen on port 3306, which is reserved for MySQL, instead of the expected application port 3001. Updated the application port configuration and restarted the application using PM2.
+
+Unhealthy application target: Investigated the application process and port configuration. The target group subsequently became healthy.
+
+Public ALB returning HTTP 503: Verified that the public ALB listener forwarded traffic to the correct Web Tier target group and confirmed the Web Server target was healthy. Further troubleshooting was still required to identify the remaining cause of the 503 response.
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+AWS Management Console: EC2, VPC, subnets, route tables, security groups, Application Load Balancers, target groups, and Amazon RDS.
+
+PowerShell: SSH connectivity tests and Test-NetConnection.
+
+Linux commands: curl, ss, systemctl, and network connectivity checks.
+
+PM2: Node.js application process management and application logs.
+
+Nginx: Web server configuration and reverse proxy troubleshooting.
+
+AWS documentation: Reference material for VPC networking, load balancers, EC2 connectivity, security groups, and RDS configuration.
 
 ---
 
@@ -142,13 +168,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/millicent-anadi-b7b93a175_aws-devops-cloudcomputing-ugcPost-7518265671076585472-tXe9/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmbeQ8Bk7IWiCzNrTecawWZMBxbCmmmG5E`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/73.png)
 
 ---
 
@@ -161,14 +187,14 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Architecture diagram completed
-- [ ] Task 2: AWS Region and services documented
-- [ ] Task 3: Public ALB DNS confirmed working
-- [ ] Task 4: All six evidence screenshots captured (Web Tier, App Tier, both ALBs, RDS + replica, app UI)
-- [ ] Task 5: Deployment summary completed (what worked, issues/fixes, tools/sources)
-- [ ] LinkedIn post published and URL submitted
-- [ ] App Tier and Database Tier confirmed not publicly accessible
-- [ ] No sensitive data exposed
+- [x] Task 1: Architecture diagram completed
+- [x] Task 2: AWS Region and services documented
+- [x] Task 3: Public ALB DNS confirmed working
+- [x] Task 4: All six evidence screenshots captured (Web Tier, App Tier, both ALBs, RDS + replica, app UI)
+- [x] Task 5: Deployment summary completed (what worked, issues/fixes, tools/sources)
+- [x] LinkedIn post published and URL submitted
+- [x] App Tier and Database Tier confirmed not publicly accessible
+- [x] No sensitive data exposed
 
 ---
 

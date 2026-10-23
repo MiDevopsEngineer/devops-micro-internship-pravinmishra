@@ -231,15 +231,15 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Architecture diagram and assumptions documented (Screenshots 1–2)
-- [ ] Task 2: Network foundation created with isolated tiers (Screenshots 3–5)
-- [ ] Task 3: Least-privilege security and secret management configured (Screenshots 6–7)
-- [ ] Task 4: Presentation tier deployed (Screenshots 8–9)
-- [ ] Task 5: Application tier deployed privately (Screenshots 10–12)
-- [ ] Task 6: Managed database tier deployed privately (Screenshots 13–15)
-- [ ] Task 7: Public entry, internal routing, and monitoring configured (Screenshots 16–18)
-- [ ] Task 8: End-to-end validation and availability test completed (Screenshots 19–22, Public Endpoint, Notes)
-- [ ] No sensitive data exposed
+- [x] Task 1: Architecture diagram and assumptions documented (Screenshots 1–2)
+- [x] Task 2: Network foundation created with isolated tiers (Screenshots 3–5)
+- [x] Task 3: Least-privilege security and secret management configured (Screenshots 6–7)
+- [x] Task 4: Presentation tier deployed (Screenshots 8–9)
+- [x] Task 5: Application tier deployed privately (Screenshots 10–12)
+- [x] Task 6: Managed database tier deployed privately (Screenshots 13–15)
+- [x] Task 7: Public entry, internal routing, and monitoring configured (Screenshots 16–18)
+- [x] Task 8: End-to-end validation and availability test completed (Screenshots 19–22, Public Endpoint, Notes)
+- [x] No sensitive data exposed
 
 ---
 

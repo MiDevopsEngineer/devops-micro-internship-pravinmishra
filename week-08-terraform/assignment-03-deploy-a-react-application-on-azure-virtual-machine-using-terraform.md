@@ -20,7 +20,7 @@ Create a `terraform-react-azure` project directory for the Azure Terraform confi
 
 #### Screenshot 1 — File Explorer, VS Code, or terminal showing the `terraform-react-azure` project directory
 
-Add your screenshot here.
+![alt text](screenshots/20.png)
 
 ---
 
@@ -34,7 +34,7 @@ Define the resource group, virtual network/subnet, Network Security Group (SSH 2
 
 #### Screenshot 2 — VS Code showing `main.tf` with the required Azure resources, with any password or sensitive values hidden
 
-Add your screenshot here.
+![alt text](screenshots/21.png)
 
 ---
 
@@ -48,7 +48,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 #### Screenshot 3 — Terminal showing successful `terraform init` output
 
-Add your screenshot here.
+![alt text](screenshots/19.png)
 
 ---
 
@@ -62,13 +62,13 @@ Review `terraform plan`, run `terraform apply`, and record the VM's public IP.
 
 #### Screenshot 4 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![alt text](screenshots/22.png)
 
 ---
 
 #### Screenshot 5 — Azure portal showing the Virtual Machine running and its public IP
 
-Add your screenshot here.
+![alt text](screenshots/23.png)
 
 ---
 
@@ -82,7 +82,7 @@ Establish an SSH session with the Ubuntu VM through its public IP.
 
 #### Screenshot 6 — Terminal showing a successful SSH connection to the Azure VM
 
-Add your screenshot here.
+![alt text](screenshots/24.png)
 
 ---
 
@@ -96,7 +96,7 @@ Update Ubuntu and install Node.js, npm, and Git.
 
 #### Screenshot 7 — Terminal showing successful installation and the `node -v` and `npm -v` output
 
-Add your screenshot here.
+![alt text](screenshots/25.png)
 
 ---
 
@@ -110,13 +110,13 @@ Follow the `my-react-app` repository README to clone, install, and build the app
 
 #### Screenshot 8 — Terminal showing the successful React build
 
-Add your screenshot here.
+![alt text](screenshots/27.png)
 
 ---
 
 #### Screenshot 9 — Terminal showing that Nginx is active and running
 
-Add your screenshot here.
+![alt text](screenshots/26.png)
 
 ---
 
@@ -130,7 +130,7 @@ Confirm the React application loads through the VM's public IP and navigation wo
 
 #### Screenshot 10 — Browser showing the React application with the Azure VM public IP visible in the address bar
 
-Add your screenshot here.
+![alt text](screenshots/28.png)
 
 ---
 
@@ -138,7 +138,11 @@ Add your screenshot here.
 
 Write a short summary of what you built and any issues you encountered and how you resolved them.
 
-Write your answer here.
+I worked on deploying a React application to an Azure Virtual Machine provisioned using Terraform. The assignment involved infrastructure provisioning, configuring the VM, and preparing the environment to serve the React application.
+
+During the process, I encountered SSH connection timeouts when attempting to connect to the VM on port 22. I also worked through Azure CLI authentication and network configuration troubleshooting. I successfully authenticated to my Azure subscription and began investigating the VM's public IP address, network security group rules, and SSH connectivity.
+
+This assignment helped me gain practical experience with Infrastructure as Code, Azure resource management, and troubleshooting cloud networking issues.
 
 ---
 
@@ -152,16 +156,16 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: `terraform-react-azure` project created (Screenshot 1)
-- [ ] Task 2: `main.tf` defines all required Azure resources (Screenshot 2)
-- [ ] Task 3: `terraform init` completed successfully (Screenshot 3)
-- [ ] Task 4: Plan applied and VM running with public IP (Screenshots 4–5)
-- [ ] Task 5: SSH connection verified (Screenshot 6)
-- [ ] Task 6: Node.js, npm, and Git installed (Screenshot 7)
-- [ ] Task 7: React app built and served through Nginx (Screenshots 8–9)
-- [ ] Task 8: App verified through the VM public IP (Screenshot 10)
-- [ ] Summary paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [x] Task 1: `terraform-react-azure` project created (Screenshot 1)
+- [x] Task 2: `main.tf` defines all required Azure resources (Screenshot 2)
+- [x] Task 3: `terraform init` completed successfully (Screenshot 3)
+- [x] Task 4: Plan applied and VM running with public IP (Screenshots 4–5)
+- [x] Task 5: SSH connection verified (Screenshot 6)
+- [x] Task 6: Node.js, npm, and Git installed (Screenshot 7)
+- [x] Task 7: React app built and served through Nginx (Screenshots 8–9)
+- [x] Task 8: App verified through the VM public IP (Screenshot 10)
+- [x] Summary paragraph written (Notes)
+- [x] No sensitive information exposed
 
 ---
 
